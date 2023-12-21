@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import BlogPost from '../components/BlogPost.astro'
+
+const allPosts = await Astro.glob('../pages/posts/*.md')
+
+const pageTitle = '文章'
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{pageTitle}</title>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	</head>
+	<body>
+		<BaseLayout pageTitle={pageTitle}>
+			<p>这是我的 Astro 学习笔记</p>
+			<ul>
+				{allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
+			</ul>
+		</BaseLayout>
+
+		<script></script>
+	</body>
+</html>

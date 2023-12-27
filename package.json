@@ -10,6 +10,8 @@
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.3.2",
+		"@astrojs/markdoc": "^0.8.1",
+		"@astrojs/mdx": "^2.0.2",
 		"@astrojs/preact": "^3.0.1",
 		"@astrojs/react": "^3.0.7",
 		"@astrojs/rss": "^4.0.1",
@@ -30,6 +32,7 @@
 	},
 	"devDependencies": {
 		"prettier": "^3.1.1",
-		"prettier-plugin-astro": "^0.12.2"
+		"prettier-plugin-astro": "^0.12.2",
+		"sass": "^1.69.5"
 	}
 }

@@ -1,7 +1,5 @@
 import { execSync } from 'child_process'
-import { statSync } from 'fs'
-
-console.log('execSyncexecSyncexecSync', execSync)
+// import { statSync } from 'fs'
 
 // 运行一个 Git 命令获取最后一次提交的 ISO 8601 时间戳（推荐）
 export function remarkModifiedTime() {
